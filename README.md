@@ -1,4 +1,4 @@
-echo "# Task Management App
+# Task Management App
 
 Project for managing staff records.
 
@@ -8,7 +8,7 @@ Project for managing staff records.
 - User Login
 - Add, Edit, and Delete Tasks
 - Manage tasks by different users
-- User-friendly interface
+
 
 ## Tech Stack
 
@@ -33,55 +33,50 @@ Follow the steps below to get the application up and running on your local machi
 1. **Clone the repository**:  
    Open your terminal and run the following command:
 
-   \`\`\`
-   git clone https://github.com/<your-username>/task-management-app.git
-   \`\`\`
+   ```
+   git clone https://github.com/arpit910/task_management.git
+   ```
 
 2. **Navigate to the project directory**:
 
-   \`\`\`
+   ```
    cd task-management-app
-   \`\`\`
+   ```
 
 3. **Create a virtual environment** (optional but recommended):
 
-   \`\`\`
+   ```
    python -m venv venv
-   \`\`\`
+   ```
 
 4. **Activate the virtual environment**:
 
    - **Windows**:
-     \`\`\`
+     ```
      venv\Scripts\activate
-     \`\`\`
+     ```
 
 
 5. **Install the required packages**:
 
    Run the following command to install all necessary dependencies:
 
-   \`\`\`
+   ```
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
-   If you don't have a \`requirements.txt\` file, create one by running:
-
-   \`\`\`
-   pip freeze > requirements.txt
-   \`\`\`
 
 6. **Run database migrations**:
 
-   \`\`\`
+   ```
    python manage.py migrate
-   \`\`\`
+   ```
 
 7. **Create a superuser (admin account)**:
 
-   \`\`\`
+   ```
    python manage.py createsuperuser
-   \`\`\`
+   ```
 
    Follow the prompts to create an admin user.
 
@@ -91,11 +86,11 @@ Follow the steps below to get the application up and running on your local machi
 
 Once you've installed all the dependencies and set up the database, you can run the development server:
 
-\`\`\`
+```
 python manage.py runserver
-\`\`\`
+```
 
-Visit \`http://127.0.0.1:8000/\` in your browser to access the application.
+Visit `http://127.0.0.1:8000/` in your browser to access the application.
 
 ---
 
@@ -110,14 +105,17 @@ method:post
 For login : http://127.0.0.1:8000/api/login/
 method:post
 
-For new task: http://127.0.0.1:8000/api/tasks/
+For adding a new task: http://127.0.0.1:8000/api/tasks/
 method:post
 
-For del task :http://127.0.0.1:8000/api/tasks/
-method:del
-
-For read task: http://127.0.0.1:8000/api/tasks/
+For list of all tasks: http://127.0.0.1:8000/api/tasks/
 method:get
 
-For update task : http://127.0.0.1:8000/api/tasks/
+For deleting a task :http://127.0.0.1:8000/api/tasks/{id}/
+method:delete
+
+For reading a task: http://127.0.0.1:8000/api/tasks/{id}/
+method:get
+
+For updating a task : http://127.0.0.1:8000/api/tasks/{id}/
 method:put
