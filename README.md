@@ -98,24 +98,31 @@ Visit `http://127.0.0.1:8000/` in your browser to access the application.
 
 Use API's :
 
-
-For register : http://127.0.0.1:8000/api/register/
+```
+For register :  http://127.0.0.1:8000/api/register/
 method:post
-
+```
+```
 For login : http://127.0.0.1:8000/api/login/
 method:post
-
+```
+```
 For adding a new task: http://127.0.0.1:8000/api/tasks/
 method:post
-
+```
+```
 For list of all tasks: http://127.0.0.1:8000/api/tasks/
 method:get
-
+```
+```
 For deleting a task :http://127.0.0.1:8000/api/tasks/{id}/
 method:delete
-
+```
+```
 For reading a task: http://127.0.0.1:8000/api/tasks/{id}/
 method:get
-
+```
+```
 For updating a task : http://127.0.0.1:8000/api/tasks/{id}/
 method:put
+```
